@@ -1,37 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+// import Hello from './Hello'
+// import Button from './Button';
+import Toggletext from "./Toggletext";
+import Object from "./object";
+import Counter from "./Counter";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const siblings = ['Mukesh','Abhishek', 'Ankit', 'Anshu', 'Ritik'];
 
+  // function msg() {
+  //   alert("Hello form Click me")
+  // }
+  // function bye() {
+  //   alert("Hello form Bye Click me")
+  // }
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Do it Abhishek.</h1>
-          <p>
-            You are special.
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+    <Object />
+    <Toggletext />
+    <Counter />
+      {/* <Hello name="Abhishek" age={33} city='Talgram' siblings={siblings}/>
+      <Button label='Click Me' handleClick={msg}/>
+      <Button label='Click Me To Bye' handleClick={bye}/> */}
+      {/* <button onClick={msg}>CLick me,</button> */}
     </>
   )
 }
